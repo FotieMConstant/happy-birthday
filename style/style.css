@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  /* background-color: #222;
+  color: #e6e6e6; */
 }
 
 body {
@@ -30,7 +32,7 @@ body {
   top: 0;
 }
 
-.container > div {
+.container>div {
   position: absolute;
   left: 0;
   right: 0;
@@ -41,7 +43,7 @@ body {
   font-size: 4.5rem;
 }
 
-.one > img {
+.one>img {
   vertical-align: middle;
   margin-bottom: 10px;
   max-width: 100%;
@@ -126,7 +128,7 @@ body {
   position: absolute;
   width: 80px;
   top: -35px;
-  left: 41.5%;
+  left: 55%;
   /* transform: scale(0.1); */
 }
 
