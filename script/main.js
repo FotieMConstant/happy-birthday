@@ -272,13 +272,14 @@ const animationTimeline = () => {
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
-    tl.restart();
+    // tl.restart();
+    window.location.replace("/wish");
   });
 };
 
 // Import the data to customize and insert them into page
 const fetchData = () => {
-  fetch("customize.json")
+  fetch("../customize.json")
     .then(data => data.json())
     .then(data => {
       Object.keys(data).map(customData => {

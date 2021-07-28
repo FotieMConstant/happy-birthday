@@ -1,130 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Happy Birthday!!! :)</title>
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  <link rel="stylesheet" href="style/style.css">
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Happy Birthday!!! :)</title>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+      </head>
 <body>
-  <div class="container">
-    <div class="one">
-      <h1 class="one">Hey
-        <span id="name">Lydia</span>
-      </h1>
-      <p class="two" id="greetingText">I really like your name btw!</p>
-    </div>
-    <div class="three">
-      <p>It's your birthday!!! 😏</p>
-    </div>
-    <div class="four">
-      <div class="text-box">
-        <p class="hbd-chatbox">Happy birthday to you!! Yeee! Many many happy blah...</p>
-        <p class="fake-btn">Send</p>
-      </div>
-    </div>
-    <div class="five">
-      <p class="idea-1">That's what I was going to do.</p>
-      <p class="idea-2">But then I stopped.</p>
-      <p class="idea-3">I realised, I wanted to do something
-        <strong>special</strong>.</p>
-      <p class="idea-4">Because,</p>
-      <p class="idea-5">You are Special
-        <span>:)</span>
-      </p>
-      <p class="idea-6">
-        <span>S</span>
-        <span>O</span>
-      </p>
-    </div>
-    <div class="six">
-      <img src="img/lydia2.png" alt="" class="lydia-dp" id="imagePath">
-      <img src="img/hat.svg" alt="" class="hat">
-      <div class="wish">
-        <h3 class="wish-hbd">Happy Birthday!</h3>
-        <h5 id="wishText">May the js.prototypes always be with you! ;)</h5>
-      </div>
-    </div>
-    <div class="seven">
-      <div class="baloons">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon2.svg" alt="">
-        <img src="img/ballon1.svg" alt="">
-        <img src="img/ballon3.svg" alt="">
-      </div>
-    </div>
-    <div class="eight">
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
+  <style>
+      body {
+        background-color: #861657;
+background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.button {
+  display: inline-block;
+  position: relative;
+}
+.button.is-play {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.button.is-play .button-outer-circle {
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+.button.is-play .button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+}
+.button.is-play .button-icon .triangle {
+  -webkit-animation: fadeIn 7s ease;
+          animation: fadeIn 7s ease;
+}
+.button.is-play .button-icon .path {
+  stroke-dasharray: 90;
+  stroke-dashoffset: 0;
+  -webkit-animation: triangleStroke 3s;
+          animation: triangleStroke 3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+.has-scale-animation {
+  -webkit-animation: smallScale 3s infinite;
+          animation: smallScale 3s infinite;
+}
+.has-delay-short {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes triangleStroke {
+  from {
+    stroke-dashoffset: 90;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes triangleStroke {
+  from {
+    stroke-dashoffset: 90;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes smallScale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes smallScale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+  </style>  
+<div class="container"><a class="button is-play" id="__playBirthday" href="#">
+    <div class="button-outer-circle has-scale-animation"></div>
+    <div class="button-outer-circle has-scale-animation has-delay-short"></div>
+    <div class="button-icon is-play">
+      <svg height="100%" width="100%" fill="#f857a6">
+        <polygon class="triangle" points="5,0 30,15 5,30" viewBox="0 0 30 15"></polygon>
+        <path class="path" d="M5,0 L30,15 L5,30z" fill="#ffa69e" stroke="#861657" stroke-width="1"></path>
       </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-    </div>
-    <div class="nine">
-      <p>Okay, now come back and tell me if you liked it.</p>
-      <p id="replay">Or click, if you want to watch it again.</p>
-      <p class="last-smile">:)</p>
-    </div>
-  </div>
+    </div></a></div>
+
+    <script>
+        document.getElementById("__playBirthday").addEventListener("click" , () => {
+            console.log("Play birthday...");
+            window.location.replace("/terminal");
+        });
+        
+    </script>
 </body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-<script type="application/javascript" src="script/main.js"></script>
-
 </html>
