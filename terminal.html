@@ -4,228 +4,698 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>🎁 Happy Birthday!!! :)</title>
-        <meta name="title" content="🎉Happy birthday from Fotie">
-        <meta name="description" content="Wishing you a birthday full of joy and happiness. Happy birthday, tulip.🎊🎈 ">
-        <meta name="keywords" content="friend, birthday, celebrate, happy">
+        <title>❤️Happy Valentine!!! :)</title>
+        <meta name="title" content="🎉Happy Valentine from Fotie">
+        <meta name="description" content="Wishing you a Valentine full of joy and happiness sweetie. Happy Valentine, Dilara.❤️🎈 ">
+        <meta name="keywords" content="baby, love, celebrate, happy">
         <meta name="robots" content="noindex, nofollow">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="language" content="English">      
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+        <meta name="language" content="English">     
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+        <style id="dynamic"></style>
       </head>
 <body>
     <style>
-       * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+html,
 body {
-  background: #191F27;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Roboto Mono', monospace;
-  color: #5F5F5E;
+    background-color: #ace7ff;
+    font-size: 62.5%;
+    line-height: 3rem;
+    margin: 0;
+    display: flex;
+    cursor: default;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
 }
 
-.terminal {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-  height: 450px;
-  background: #292E39;
-  border-radius: 5px;
+.main {
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.controls {
-  position: absolute;
-  top: 10px;
-  width: 100%;
-  height: 5%;
-  display: flex;
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    width: 100%;
+    z-index: 10;
 }
 
-.circle {
-  width: 3.5%;
-  height: 98%;
-  border-radius: 50%;
-  transform: scale(0.7);
+h1 {
+    font-size: 18px;
+    font-size: 2.8em;
+    font-size: 3.5vw;
+    color: rgba(0, 0, 0, 0.5);
+    top: 14%;
 }
 
-.minimize {
-  margin: 0 5px;
-  background: #F2C429;
+h2 {
+    bottom: 1vh;
+    font-size: 10px;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.35);
 }
 
-.close {
-  background: #DB5963;
-  margin-left: 10px;
+h1 span {
+    font-size: 10.6vw;
+    line-height: 1em;
+    z-index: 100;
+    text-shadow: 0.04em 0.04em 0 #fcfade;
+    display: block;
 }
 
-.expand {
-  background: #48CE37;
+h1 span,
+h1 span:after {
+    font-weight: 600;
+    color: #e17171;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 0.16em;
 }
 
-span {
-  disaply: inline-block;
+h1 span:after {
+    color: rgba(0, 0, 0, 0.25);
+    text-shadow: none;
+    position: absolute;
+    left: 0.08em;
+    top: 0.08em;
+    z-index: -1;
 }
 
-.prompt {
-  color: #5F5F5E;
-  margin-right: 15px;
+span.one:after {
+    content: "Will you";
 }
 
-.commandline {
-  position: absolute;
-  display: flex;
-  top: 40px;
-  width: 100%;
-  height: 15%;
-  padding: 15px;
-  color: #EFEFF2;
+span.two:after {
+    content: "bee my";
+}
+
+span.three:after {
+    content: "valentine?";
+}
+
+@media screen and (min-width: 880px) {
+    h1 {
+        font-size: 2.5vw;
+    }
+
+    h1 span {
+        font-size: 6vw;
+    }
+}
+
+.bee {
+    -webkit-animation: hover 2s ease-in-out infinite;
+    animation: hover 2s ease-in-out infinite;
+}
+
+.bee-body {
+    position: relative;
+    margin: 136px 130px 38px 130px;
+    min-width: 130px;
+    background: #ffca31;
+    /*body*/
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-size: 130px 65px, cover, cover, cover;
+    background-image: linear-gradient(to bottom, transparent 50%, #292929 50%),
+        radial-gradient(circle at 51% 36%, #ffd764 47%, transparent 47%),
+        radial-gradient(circle at 51% 53%, #ffd764 55%, transparent 55%),
+        radial-gradient(circle at 60% 53%, #ffebb1 60%, transparent 60%);
+    /*stripes on body*/
+    box-shadow: 35px -105px 0 -44px #ffd764, -35px -105px 0 -44px #ffd764,
+        38px -107px 0 -41px #ffebb1, -32px -107px 0 -41px #ffebb1,
+        35px -105px 0 -38px #ffca31, -35px -105px 0 -38px #ffca31,
+        3px -95px 0 -18px #ffd764, 5px -100px 0 -15px #ffebb1,
+        0px -95px 0 -10px #ffca31, -35px -183px 0 -57px #363636,
+        35px -183px 0 -57px #363636, -33px -185px 0 -56px #505050,
+        37px -185px 0 -56px #505050, -35px -184px 0 -54px #292929,
+        35px -184px 0 -54px #292929;
+    /*antenae nubs*/
+}
+
+.bee-body:after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(to bottom, transparent 50%, #363636 50%);
+    height: 130px;
+    width: 130px;
+    right: 0px;
+    bottom: 0px;
+    background-size: 130px 65px;
+    border-radius: 50%;
+    -webkit-clip-path: ellipse(41% at 51% 48%);
+    clip-path: ellipse(41% at 51% 48%);
+}
+
+.bee-body:before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(to bottom, transparent 50%, #434343 50%);
+    height: 130px;
+    width: 130px;
+    right: 0px;
+    bottom: 0px;
+    background-size: 130px 65px;
+    border-radius: 50%;
+    -webkit-clip-path: ellipse(41% at 61% 48%);
+    clip-path: ellipse(41% at 61% 48%);
+}
+
+.mouth {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 55px;
+    bottom: 128px;
+    border-radius: 0% 0% 50% 50%;
+    box-sizing: border-box;
+    border-bottom: 5px solid #363636;
+}
+
+.antenae {
+    position: relative;
+    z-index: -2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50% 0% 0% 50%;
+    right: -75px;
+    bottom: 130px;
+    border: 8px solid #363636;
+    /*right antenae stem*/
+    box-sizing: border-box;
+    border-style: hidden hidden hidden solid;
+    transform: skewY(-20deg);
+}
+
+.antenae:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 0% 50% 50% 0%;
+    left: -87px;
+    bottom: 30px;
+    border: 8px solid #363636;
+    /*left antenae stem*/
+    box-sizing: border-box;
+    border-style: hidden solid hidden hidden;
+    transform: skewY(40deg);
+}
+
+.antenae:after {
+    /*stinger*/
+    transform: skewY(20deg);
+    position: absolute;
+    content: "";
+    bottom: -213px;
+    left: -33px;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to right, #292929 50%, #363636 50%);
+    -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+.bee-left {
+    -webkit-animation: flight-left 0.5s ease-out infinite;
+    animation: flight-left 0.5s ease-out infinite;
+    content: "";
+    position: absolute;
+    background-color: #f8f8ff;
+    /*large wing left*/
+    height: 100px;
+    width: 150px;
+    bottom: 110px;
+    right: 100px;
+    border-radius: 30px 130px 0 130px;
+    transform: skewY(20deg);
+    z-index: -1;
+    box-shadow: inset -10px 30px 0px 10px #fff;
+}
+
+.bee-left:after {
+    -webkit-animation: flight-little 0.5s ease-in-out infinite;
+    animation: flight-little 0.5s ease-in-out infinite;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    top: 70px;
+    left: 48px;
+    background-color: #f0f0f0;
+    /*little wing left*/
+    border-radius: 50%/50% 0 100% 50%;
+    box-shadow: inset 10px 1px 0px 0px #fff, inset 30px 7px 0px 0px #f6f6f6;
+}
+
+.bee-right {
+    -webkit-animation: flight-right 0.5s ease-in-out infinite;
+    animation: flight-right 0.5s ease-in-out infinite;
+    content: "";
+    position: absolute;
+    background-color: #f8f8ff;
+    /*large wing right*/
+    height: 100px;
+    width: 150px;
+    bottom: 110px;
+    left: 100px;
+    border-radius: 130px 30px 130px 0px;
+    transform: skewY(-20deg);
+    z-index: -1;
+    box-shadow: inset 10px 30px 0px 10px #fff;
+}
+
+.bee-right:after {
+    -webkit-animation: flight-little 0.5s ease-in-out infinite;
+    animation: flight-little 0.5s ease-in-out infinite;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    top: 70px;
+    right: 48px;
+    background-color: #f0f0f0;
+    /*little wing right*/
+    border-radius: 50%/0% 50% 50% 100%;
+    box-shadow: inset -10px 1px 0px 0px #fff, inset -30px 7px 0px 0px #f6f6f6;
 }
 
 .blink {
-  display: inline;
-  margin-left: 3px;
-  width: 10px;
-  height: 25px;
-  background: #EFEFF2;
-  transition: all 0.35s;
-  animation: blinking 1s infinite;
+    position: relative;
 }
 
-.loading {
-  opacity: 0;
-  position: absolute;
-  display: flex;
-  top: 90px;
-  width: 100%;
-  height: 15%;
-  padding: 15px;
-  color: #EFEFF2;
+.blink:before {
+    /*left pupil and eyeball shadows*/
+    background-image: radial-gradient(circle at 71% 38%, #fff 8%, transparent 8%),
+        radial-gradient(circle at 65% 50%, #363636 16%, transparent 16%),
+        radial-gradient(circle at 69% 47%, #434343 19%, transparent 19%),
+        radial-gradient(circle at 65% 50%, #292929 25%, transparent 25%),
+        radial-gradient(ellipse at 50% 55%, #f8f8ff 50%, transparent 50%),
+        radial-gradient(circle at 70% 50%, #fff 65%, transparent 65%);
+    left: 2px;
 }
 
-.bars {
-  height: 70%;
-  display: flex;
-  margin-left: 25px;
+.blink:before,
+.blink:after {
+    -webkit-clip-path: ellipse(50% 20% at 50% 50%);
+    clip-path: ellipse(50% 20% at 50% 50%);
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    top: -67px;
+    -webkit-animation: blink 10s linear infinite;
+    animation: blink 10s linear infinite;
 }
 
-.bar {
-  width: 8px;
-  height: 100%;
-  background: #EFEFF2;
-  margin-right: 1px;
+.blink:after {
+    /*right pupil and eyeball shadows*/
+    background-image: radial-gradient(circle at 41% 38%, #fff 8%, transparent 8%),
+        radial-gradient(circle at 35% 50%, #363636 16%, transparent 16%),
+        radial-gradient(circle at 39% 47%, #434343 19%, transparent 19%),
+        radial-gradient(circle at 35% 50%, #292929 25%, transparent 25%),
+        radial-gradient(ellipse at 50% 55%, #f8f8ff 50%, transparent 50%),
+        radial-gradient(circle at 70% 50%, #fff 65%, transparent 65%);
+    left: 73px;
 }
 
-.percent {
-  margin-left: 10px;
-}
-@keyframes letter1 {
-  0% {
-    display: none;
-  }
-  100% {
-    display: inline-block;
-  }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@keyframes blinking {
-  0% {
-    background: #EFEFF2;
-  }
-  50% {
-    background: transparent;
-  }
-   100% {
-    background: #EFEFF2;
-  }
-} 
+.shadow {
+    height: 45px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: #88badd;
+    -webkit-animation: shadow 2s ease-in-out infinite;
+    animation: shadow 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes blink {
+
+    0%,
+    9%,
+    11%,
+    30%,
+    32%,
+    33%,
+    35%,
+    54%,
+    56%,
+    79%,
+    81%,
+    100% {
+        -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+        clip-path: ellipse(50% 50% at 50% 50%);
+    }
+
+    10%,
+    31%,
+    34%,
+    55%,
+    80% {
+        -webkit-clip-path: ellipse(50% 5% at 50% 50%);
+        clip-path: ellipse(50% 5% at 50% 50%);
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    9%,
+    11%,
+    30%,
+    32%,
+    33%,
+    35%,
+    54%,
+    56%,
+    79%,
+    81%,
+    100% {
+        -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+        clip-path: ellipse(50% 50% at 50% 50%);
+    }
+
+    10%,
+    31%,
+    34%,
+    55%,
+    80% {
+        -webkit-clip-path: ellipse(50% 5% at 50% 50%);
+        clip-path: ellipse(50% 5% at 50% 50%);
+    }
+}
+
+@-webkit-keyframes hover {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes hover {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes shadow {
+
+    0%,
+    100% {
+        width: 170px;
+    }
+
+    50% {
+        width: 180px;
+    }
+}
+
+@keyframes shadow {
+
+    0%,
+    100% {
+        width: 170px;
+    }
+
+    50% {
+        width: 180px;
+    }
+}
+
+@-webkit-keyframes flight-left {
+
+    0%,
+    100% {
+        width: 150px;
+        transform: skewY(20deg);
+    }
+
+    50% {
+        width: 125px;
+        transform: skewY(25deg);
+    }
+}
+
+@keyframes flight-left {
+
+    0%,
+    100% {
+        width: 150px;
+        transform: skewY(20deg);
+    }
+
+    50% {
+        width: 125px;
+        transform: skewY(25deg);
+    }
+}
+
+@-webkit-keyframes flight-right {
+
+    0%,
+    100% {
+        width: 150px;
+        transform: skewY(-20deg);
+    }
+
+    50% {
+        width: 125px;
+        transform: skewY(-25deg);
+    }
+}
+
+@keyframes flight-right {
+
+    0%,
+    100% {
+        width: 150px;
+        transform: skewY(-20deg);
+    }
+
+    50% {
+        width: 125px;
+        transform: skewY(-25deg);
+    }
+}
+
+@-webkit-keyframes flight-little {
+
+    0%,
+    100% {
+        height: 110px;
+    }
+
+    50% {
+        height: 100px;
+    }
+}
+
+@keyframes flight-little {
+
+    0%,
+    100% {
+        height: 110px;
+    }
+
+    50% {
+        height: 100px;
+    }
+}
+
+@-webkit-keyframes wobble {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes wobble {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+}
+
+#falling-hearts {
+    animation: wobble 60s ease-in infinite;
+    position: fixed;
+    inset: 0 0 0 0;
+    pointer-events: none;
+}
+
+.heart {
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1000;
+    position: fixed;
+}
     </style>
-  
-  <div class="terminal">
-    <div class="controls">
-      <div class="circle close"></div>
-      <div class="circle minimize"></div>
-      <div class="circle expand"></div>
+  <!-- body -->
+  <div id="falling-hearts"></div>
+  <div class="main">
+    <h1>Happy Valentine's Day!</br>
+      <span class="one">Will you</span></br>
+      <span class="two">Bee my</span></br>
+      <span class="three">valentine?</span>
+    </h1>
+    <div class="wrapper">
+      <div onclick="clickOnBee()" id="theBee" class="bee">
+        <div class="bee-body">
+          <div class="blink"></div>
+          <div class="mouth"></div>
+          <div class="antenae"></div>
+          <div class="bee-left"></div>
+          <div class="bee-right"></div>
+        </div>
+      </div>
+      <div class="shadow"></div>
     </div>
-    <div class="commandline">
-      <span class="prompt">$</span>
-      <span class="command"></span>
-      <div class="blink"></div>
-    </div>
-    <div class="loading">
-      <div class="bars"></div>
-      <div class="percent"><span class="number"></span>%</div>
-    </div>
+    <h2>
+      To <span id="valentine">Sude Dilara</span>:
+      <br />
+      <span id="message">You are my queen bee</span>
+      <br />
+      <span style="color:#e17171; text-transform: capitalize;">PS: Click on the bee🙂</span>
+    </h2>
   </div>
-  <footer>
-      
-  </footer>
+  <!--/ body -->
   <script>
-      const command = ['s','u','d','o',' ','apt', '-', 'g', 'e', 't', ' ','i', 'n', 's', 't', 'a', 'l', 'l', ' ', 'w','i','s','h','-','f','r','o','m','-','f','o','t','i','e'];
-const adder = 2;
-let message = '';
-let i = 0;
-let percent = 0;
-
-const typeMessage = () => {
-  if (i < command.length) {
-    message += command[i];
-    container.textContent = message;
-    i++;
-  } else {
-    clearInterval(fullMessage);
-    setTimeout(() => {
-      blink.style.display = 'none';
-      loadingContainer.style.opacity = 1;
-      let loader = setInterval(addBars, 100);
-    }, 1000);
-
-  }
-};
-
-const addBars = () => {
-  if (percent <= 100) {
-    percentContainer.textContent = percent;
-    percent += adder;
-    const bar = document.createElement("span");
-    bar.classList.add('bar');
-    bars.appendChild(bar);
-  } else {
-    clearInterval(loader);
-  }
-
-};
-
-const container = document.querySelector('.command');
-const blink = document.querySelector('.blink');
-const loadingContainer = document.querySelector('.loading');
-const bars = document.querySelector('.bars');
-const percentContainer = document.querySelector('.number');
-
-let fullMessage = setInterval(typeMessage, 200);
-
-
 // delay for a while tovar delay = ( function() {
-  var delay = ( function() {
-    var timer = 0;
-    return function(callback, ms) {
-        clearTimeout (timer);
-        timer = setTimeout(callback, ms);
-    };
+//   var delay = ( function() {
+//     var timer = 0;
+//     return function(callback, ms) {
+//         clearTimeout (timer);
+//         timer = setTimeout(callback, ms);
+//     };
+// })();
+//     delay(function(){
+//       // do stuff
+//       window.location.replace("wish.html");
+//   }, 12000 ); // end delay
+
+// play birthday audio in background
+var audio = new Audio();
+    audio.src='audio/sound_val.mp3';
+    // when the sound has been loaded, execute your code
+    audio.oncanplaythrough = (event) => {
+        var playedPromise = audio.play();
+        if (playedPromise) {
+            playedPromise.catch((e) => {
+                console.log(e)
+                if (e.name === 'NotAllowedError' || e.name === 'NotSupportedError') { 
+                      console.log(e.name);
+                  }
+            }).then(() => {
+                  console.log("Happy Valentine 🎉 🎉  !!!");
+                  console.log("I knew you'd check the console... lol! 😏")
+            });
+        }
+    }
+function clickOnBee() {
+  console.log("you clicked on the bee")
+  window.location.replace("wish.html");
+
+}
+
+(() => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const valentine = urlParams.get("valentine");
+  if (valentine) {
+    document.getElementById("valentine").innerText = valentine;
+  }
+  const message = urlParams.get("message");
+  if (message) {
+    document.getElementById("message").innerText = message;
+  }
+
+  const randomInt = (n) => Math.floor(Math.random() * n);
+  document.getElementById("dynamic").innerText = `
+    @keyframes spin {
+        0% {
+          margin-top: 2vh;
+          opacity: 0;
+        }
+        20% {
+          opacity:1.0;
+          margin-top: 0vh;
+          margin-left: 0vw;
+          transform: rotate(${randomInt(90)}deg);
+        }
+        100% {
+          opacity: 0.4;
+          margin-top: 100vh;
+          margin-left: ${randomInt(4)}vw;
+          transform: rotate(1080deg); 
+        }
+      };
+    `;
+  let numberOfHearts = 45;
+  while (numberOfHearts--) {
+    var heartDiv = document.createElement("div");
+    heartDiv.classList.add("heart");
+    heartDiv.style = `animation: spin ${randomInt(14) + 6}s ease-in infinite;
+                        top: ${randomInt(40)}vh;
+                       left: ${randomInt(100)}vw;
+                  font-size: ${randomInt(40) + 20}px;
+                      color: ${["#d00", "#e66", "#fcc"][randomInt(3)]};`;
+    heartDiv.textContent = ["\u2661", "\u2665"][randomInt(2)];
+    document.getElementById("falling-hearts").appendChild(heartDiv);
+  }
 })();
-    delay(function(){
-      // do stuff
-      window.location.replace("wish.html");
-  }, 12000 ); // end delay
   </script>
 </body>
 </html>
